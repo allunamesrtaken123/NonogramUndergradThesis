@@ -19,3 +19,7 @@ This scraping is accomplished with the script `puzzleScraping.py`. Next is to pa
 Once the CNF formulae have been generated, the solving process is pretty similar to that of the randomly generated puzzles. The only difference is that now the dimensions have to be read from the JSON file before solving rather than just being set at the top of the script. The solving is done using the script `solvingScrapedPuzzles.py`.
 
 There is way too much data to put it on GitHub, but these scripts should allow you to recreate the analysis, possibly even extending it with more recent puzzles.
+
+#### Scraping Puzzles
+#### Parsing Scraped Puzzles
+The C script `parseScrapedPuzzles.c` is used to read the JSON files and convert them to CNF formulae. To compile, use the command `gcc -o parsePuzzles parseScrapedPuzzles.c buf.c -ljansson`. The elements that may need to be changed are the directory paths in lines 130 and 211. You should be able to keep the files paths the same.
