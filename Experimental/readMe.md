@@ -29,3 +29,6 @@ The only things to change for the files are the file paths to read in the links 
 
 #### Parsing Scraped Puzzles
 The C script `parseScrapedPuzzles.c` is used to read the JSON files and convert them to CNF formulae. To compile, use the command `gcc -o parsePuzzles parseScrapedPuzzles.c buf.c -ljansson`. The elements that may need to be changed are the directory paths in lines 130 and 211. You should be able to keep the files paths the same.
+
+#### Solving Scraped Puzzles
+The final step in the process is actually solving the puzzles to determine inferability. For this, `solvingScrapedPuzzles.py` is used. The only things to change are again the file paths.
