@@ -1,5 +1,8 @@
 # Chapter 4 -- Experimental Results
 
+## Phase Transition
+Once the boards have been generated and encoded (see encoding directory of this repository for how to do that), phase transition behavior can be investigated. This is done using `phaseTransition.py`. The SAT solver used is provided by the package [PySAT](https://pysathq.github.io/). This package provides Python wrappers for up-to-date C++ implementations for state of the art SAT solvers. The package website has [instructions on how to install the package](https://pysathq.github.io/installation/). To run this file, simply update the size of the board and number of boards in lines 13 and 14, correct the path in line 26 so the CNF DIMACS files can be read in, and update the path in line 43 so that the data can be used for visualization.
+
 
 ## Scraped Puzzles
 
@@ -32,3 +35,7 @@ The C script `parseScrapedPuzzles.c` is used to read the JSON files and convert 
 
 #### Solving Scraped Puzzles
 The final step in the process is actually solving the puzzles to determine inferability. For this, `solvingScrapedPuzzles.py` is used. The only things to change are again the file paths.
+
+
+## Visualizations.
+The code for recreating all of the visualizations can be found in the R script `Phase Transition Plots.R` (it does more than just phase transition plots).
