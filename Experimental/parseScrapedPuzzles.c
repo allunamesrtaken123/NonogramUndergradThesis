@@ -283,7 +283,7 @@ int main(void){
 }
 
 /*
-The documentation for these functions can be found in the file integratedSolver.c in 
+The documentation for these functions can be found in the file regExEncoding.c in 
 the directory encoding of the GitHub repo. Sorry for being sloppy and not putting
 these functions in a module.
 */
