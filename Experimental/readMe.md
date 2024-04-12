@@ -37,5 +37,5 @@ The C script `parseScrapedPuzzles.c` is used to read the JSON files and convert 
 The final step in the process is actually solving the puzzles to determine inferability. For this, `solvingScrapedPuzzles.py` is used. The only things to change are again the file paths.
 
 
-## Visualizations.
+## Visualizations
 The code for recreating all of the visualizations can be found in the R script `Phase Transition Plots.R` (it does more than just phase transition plots).
